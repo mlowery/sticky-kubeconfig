@@ -45,7 +45,7 @@ sticky-kubeconfig is a set of shell scripts that provides a unique kubeconfig pe
     when = 'sk-dirty -q'
     command = "echo 💾"
     ```
-4. (Optional) When you see the dirty icon in your prompt. You can optionally choose to set the session-unique kubeconfig as the new golden kubeconfig. To do so, run `sk-dirty`.
+4. (Optional) When you see the dirty icon in your prompt. You can optionally choose to set the session-unique kubeconfig as the new golden kubeconfig. To do so, run `sk-dirty` (with no arguments).
 
 ## Requirements
 
