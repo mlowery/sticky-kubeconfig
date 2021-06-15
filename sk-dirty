@@ -4,7 +4,7 @@ set -euo pipefail
 
 function dirty {
     local d=/tmp/sticky_kubeconfig/${TERM_SESSION_ID//:/-}
-    if [[ -z $KUBECONFIG || ! -f $d/config ]]; then
+    if [[ -z $KUBECONFIG || ! -f $d/config || $KUBECONFIG != $d/config ]]; then
         return 1
     fi
     local mine=$(mktemp)
